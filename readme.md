@@ -11,6 +11,7 @@ user@debian:~/project$ cp -r .env.example .env
 user@debian:~/project$ php artisan key:generate
 user@debian:~/project$ sudo chmod 777 -R storage/
 user@debian:~/project$ sudo chmod 777 -R boostrap/cache
+user@debian:~/project$ php artisan migrate
 ```
 
 Por último configurar las variables de entorno en el archivo .env con la información de la base de datos.

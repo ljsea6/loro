@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::middleware('cors')->group(function () {
-    Route::resource('/users', 'UserController');
+    Route::resource('/users', 'UserController')->except(['edit', 'create']);
 });
